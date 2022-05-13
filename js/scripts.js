@@ -20,3 +20,13 @@ let pokemonList = [
     types: ['water', 'ground']
   }
 ];
+
+// Iterate over each item to display pokemon 'name (height)'.
+// Check if height is over 9.
+
+for (i = 0; i < pokemonList.length; i++) {
+  document.write(pokemonList[i].name + ' (height: '+ pokemonList[i].height + ') ');
+  if (pokemonList[i].height > 8) {
+    document.write('- Wow, that\'s big! ');
+  }
+}
