@@ -1,32 +1,38 @@
-// alert('Hello world');
+let pokemonRepository = (function () {
+  
+  let pokemonList = [
+    {
+      name: 'Bulbasaur',
+      height: 7,
+      types: ['grass', 'poison']
+    },
+    {
+      name: 'Charizard',
+      height: 8,
+      types: ['fire', 'flying']
+    },
+    {
+      name: 'Blastoise',
+      height: 9,
+      types: ['water', 'ground']
+    }
+  ];
 
-// let favoriteFood = 'Pizza';
-// document.write(favoriteFood);
-
-let pokemonList = [
-  {
-    name: 'Bulbasaur',
-    height: 7,
-    types: ['grass', 'poison']
-  },
-  {
-    name: 'Charizard',
-    height: 8,
-    types: ['fire', 'flying']
-  },
-  {
-    name: 'Blastoise',
-    height: 9,
-    types: ['water', 'ground']
+  return {
+    add: function(pokemon) {
+      pokemonList.push(pokemon);
+    },
+    getAll: function() {
+      return pokemonList;
+    }
   }
-];
+})();
 
-// Iterate over each item to display pokemon 'name (height)'.
-// Check if height is over 9.
+// Loop over each item using forEach() method.
 
-for (i = 0; i < pokemonList.length; i++) {
-  document.write(pokemonList[i].name + ' (height: '+ pokemonList[i].height + ') ');
-  if (pokemonList[i].height > 8) {
-    document.write('- Wow, that\'s big! ');
-  }
+function myLoopFunction(pokemon) {
+  document.write((pokemon.name + ' (height: '+ pokemon.height + ') '));
+  
 }
+
+pokemonRepository.getAll().forEach(myLoopFunction);
