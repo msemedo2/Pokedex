@@ -18,21 +18,29 @@ let pokemonRepository = (function () {
     }
   ];
 
-  return {
-    add: function(pokemon) {
-      pokemonList.push(pokemon);
-    },
-    getAll: function() {
-      return pokemonList;
-    }
+  function add(pokemon) {
+    pokemonList.push(pokemon);
   }
+
+  function getAll() {
+    return pokemonList;
+  }
+
+  return {
+    add: add,
+    getAll: getAll
+  };
+
 })();
 
 // Loop over each item using forEach() method.
 
 function myLoopFunction(pokemon) {
   document.write((pokemon.name + ' (height: '+ pokemon.height + ') '));
-  
+  if (pokemon.height > 8) {
+    document.write('-Wow, that\'s big! ');
+  }
+  document.write('<br>')
 }
 
 pokemonRepository.getAll().forEach(myLoopFunction);
