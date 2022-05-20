@@ -1,13 +1,11 @@
 .button-class {
   background-color: lightblue;
-  border: none;
   text-align: center;
-  text-decoration: none;
   font-size: 16px;
   border: 1px solid black;
   padding: 15px;
-  margin: 5px;
-  width: 100px;
+  margin: 3px;
+  width: 180px;
 }
 
 li {
