@@ -1,105 +1,48 @@
-@import url('http://fonts.cdnfonts.com/css/pokemon-solid');
-@import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
-
 * {
 	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
 }
 
 body {
-	font-family: 'Pokemon Solid', sans-serif;
+	font-family: 'Nunito', sans-serif;
 	background-color: #b3e8e5;
 	text-align: center;
 }
 
-.pokemon-list {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin-top: 30px;
+.navbar {
+	margin-bottom: 30px;
+	width: 100%;
+	z-index: 999;
 }
 
-.pokemon-list-item {
-	display: flex;
-	margin: 3px 10px;
-	width: 300px;
+img {
+	width: 230px;
 }
 
-.pokemon-list-button {
-	font-family: 'Mukta', sans-serif;
-	background-color: #3bacb6;
-	color: #fff;
-	text-align: center;
-	font-size: 30px;
-	flex-grow: 1;
-	cursor: pointer;
-	padding: 0 50px;
+.col {
+	margin-top: 130px;
 }
 
-.pokemon-list-button:hover {
+button {
+	padding: 7px;
+	margin: 3px;
+	font-size: 25px;
+	min-width: 150px;
+	width: 30%;
 	background-color: #2f8f9d;
 }
 
-#modal-container {
-	display: none;
+button:hover {
+	background-color: #3bacb6;
+	color: white;
 }
 
-#modal-container.is-visible {
-	position: fixed;
-	padding: 10px;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: rgba(0, 0, 0, 0.5);
-	z-index: 999;
-	overflow: auto;
-	display: grid;
-	text-align: center;
+.close {
+	position: absolute;
+	right: 0.1px;
 }
 
-.modal {
-	margin: auto;
-	display: inline-block;
-	background: #fff;
-	padding: 15px;
-	width: 100%;
-	max-width: 700px;
-	text-align: left;
-	border-radius: 7%;
-}
-
-.modal p {
-	margin-top: 20px;
-}
-
-.modal-close {
-	float: right;
-	border: 0;
-	background: none;
-	color: #777;
-	cursor: pointer;
-	padding: 10px;
-}
-
-.modal-close:hover {
-	background-color: #f00;
-	color: #fff;
-	border-radius: 50%;
-}
-
-.pokemon-front-image {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	width: 50%;
-}
-
-.modal h1 {
-	margin-top: 0;
-}
-
-.modal p {
-	margin-bottom: 0;
+@media screen and (max-width: 510px) {
+	img {
+		width: 170px;
+	}
 }
