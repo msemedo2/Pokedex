@@ -100,12 +100,18 @@ let pokemonRepository = (function () {
 
 	// Modal creation
 	function showModal(pokemon) {
+		// eslint-disable-next-line no-undef
 		let modalTitle = $('.modal-title');
+		// eslint-disable-next-line no-undef
 		let modalBody = $('.modal-body');
+		// eslint-disable-next-line no-undef
 		let pokemonName = $('<h2>' + pokemon.name + '</h2>');
+		// eslint-disable-next-line no-undef
 		let pokemonHeight = $('<p>' + 'Height: ' + pokemon.height + '</p>');
-		let pokemonImage = $("<img class='pokemon-modal-image'>");
+		// eslint-disable-next-line no-undef
+		let pokemonImage = $('<img class="pokemon-modal-image">');
 		pokemonImage.attr('src', pokemon.imageUrlFront);
+		// eslint-disable-next-line no-undef
 		let typeTextElement = $('<p>' + 'Types: ' + '</p>');
 		let typeElement = document.createElement('p');
 		pokemon.types.forEach((type, index) => {
