@@ -1,0 +1,40 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: Nunito, sans-serif;
+	background-color: #b3e8e5;
+	text-align: center;
+}
+.navbar {
+	margin-bottom: 30px;
+	width: 100%;
+	z-index: 999;
+}
+img {
+	width: 230px;
+}
+.col {
+	margin-top: 130px;
+}
+button {
+	padding: 7px;
+	margin: 3px;
+	font-size: 25px;
+	min-width: 150px;
+	width: 30%;
+	background-color: #2f8f9d;
+}
+button:hover {
+	background-color: #3bacb6;
+	color: #fff;
+}
+.close {
+	position: absolute;
+	right: 0.1px;
+}
+@media screen and (max-width: 510px) {
+	img {
+		width: 170px;
+	}
+}
