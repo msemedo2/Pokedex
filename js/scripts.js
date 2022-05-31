@@ -132,13 +132,10 @@ let pokemonRepository = (function () {
 	}
 
 	return {
-		add: add,
-		getAll: getAll,
-		addListItem: addListItem,
-		showDetails: showDetails,
-		loadList: loadList,
-		loadDetails: loadDetails,
-		addEvent: addEvent,
+		add,
+		showDetails,
+		loadDetails,
+		addEvent,
 	};
 })();
 
